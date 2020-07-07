@@ -61,43 +61,34 @@ newArr;
 
 //6
 const addNoises = function(arr){
+  let newArr = [];
   let result = '';
+
   const dogs = ["Fido", "Rolph", "Maisie"];
   const cats = ["Garfield", "Heathcliff"];
   const dinos = ["Barnie", "Sharp Tooth"];
 
   for ( const items of arr){
     if (items ==='Fido' || items === 'Rolph' || items === 'Maisie'){
-      result += `"${items} says "Woof!"",`
+      result = `${items} says "Woof!"`
+      newArr.push(result);
     }
     if (items === 'Garfield' || items ==='Heathcliff'){
-      result += `"${items} says "Meow!"",`
+      result = `${items} says "Meow!"`
+      newArr.push(result);
     }
     if (items === 'Barnie' || items ==='Sharp Tooth'){
-      result += `'"${items} says "ROWR."",`
+      result = `${items} says "ROWR."`
+      newArr.push(result);
+      newArr;
     }
   }
 
-  result;
-  return result;
+  newArr;
+  return newArr;
 }
 
-addNoises(['Fido','Rolph','Barnie']);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// addNoises(['Rolph','Barnie']);
 
 
 /*********************************
